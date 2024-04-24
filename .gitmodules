@@ -1,0 +1,6 @@
+[submodule "diffusers"]
+	path = diffusers
+	url = https://github.com/huggingface/diffusers.git
+[submodule "peft"]
+	path = peft
+	url = https://github.com/huggingface/peft.git
