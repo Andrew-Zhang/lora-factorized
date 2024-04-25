@@ -1,0 +1,21 @@
+accelerate launch /home/azhang42/models/lora-factorized/diffusers/examples/text_to_image/train_text_to_image_lora.py \
+  --pretrained_model_name_or_path=runwayml/stable-diffusion-v1-5 \
+  --dataset_name=YaYaB/onepiece-blip-captions \
+  --dataloader_num_workers=8 \
+  --resolution=512 \
+  --center_crop \
+  --random_flip \
+  --train_batch_size=4 \
+  --gradient_accumulation_steps=4 \
+  --max_train_steps=2000 \
+  --learning_rate=1e-04 \
+  --max_grad_norm=1 \
+  --lr_scheduler=cosine \
+  --lr_warmup_steps=0 \
+  --output_dir=/home/azhang42/models/lora-factorized/outputs \
+  --push_to_hub \
+  --hub_model_id=onepiece-lora \
+  --report_to=wandb \
+  --checkpointing_steps=500 \
+  --validation_prompt="A man with a sword" \
+  --seed=1337
