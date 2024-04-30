@@ -1,0 +1,11 @@
+Normal Lora net time: 2:22:00
+Factorized lora net time: 3:49:53
+
+Normal Lora net IR: 0.029
+Factorized Lora net IR: 0.305
+
+Normal Lora net HP: 0.236
+Factorized Lora net HP: 0.244
+
+Normal Lora net CLIP: 0.7141
+Factorized Lora net CLIP: 0.7125
