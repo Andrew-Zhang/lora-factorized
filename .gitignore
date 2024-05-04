@@ -1,2 +1,6 @@
 wandb/
 outputs/
+regular_outputs/
+reg_generated_images/
+one_piece_generated_images/
+one_piece_generated_images2/

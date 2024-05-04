@@ -1,4 +1,4 @@
-accelerate launch --mixed_precision=no /home/zabibeau/DeepLearningProject/lora-factorized/diffusers/examples/text_to_image/train_text_to_image_lora.py \
+accelerate launch --mixed_precision=no /home/zabibeau/DeepLearningProject/lora-factorized/train_text_to_image_lora.py \
   --pretrained_model_name_or_path=runwayml/stable-diffusion-v1-5 \
   --dataset_name=YaYaB/onepiece-blip-captions \
   --dataloader_num_workers=8 \
@@ -12,7 +12,7 @@ accelerate launch --mixed_precision=no /home/zabibeau/DeepLearningProject/lora-f
   --max_grad_norm=1 \
   --lr_scheduler=cosine \
   --lr_warmup_steps=0 \
-  --output_dir=/home/zabibeau/DeepLearningProject/lora-factorized/outputs \
+  --output_dir=/home/zabibeau/DeepLearningProject/lora-factorized/regular_outputs \
   --push_to_hub \
   --hub_model_id=onepiece-lora \
   --report_to=wandb \
